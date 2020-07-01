@@ -1,0 +1,8 @@
+This is how to compile the source codes contained in the folder 'codes' on linux OS :
+Let program.cpp be the main code.
+
+g++ program.cpp -o program -lGL -lglut -lGLEW (if text rendering is not desired)
+g++ program.cpp -o program -lGL -lglut -lGLEW -I/usr/include/freetype2 -lfreetype (if text rendering is desired)
+
+Note : The command -I/usr/include/freetype2 -lfreetype handles the freetype library and is used
+when the program renders fonts. 
